@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table 2</title>
+<style>
+	table, th, td{
+		border: 1px solid #ccc;
+	}
+	
+	td{
+		width: 100px;
+		height: 30px;
+	}
+</style>
+</head>
+<body>
+	<colgroup>
+		<col><!-- 스타일 없음 -->
+		<col span="2" style="background-color: mediumaquamarine;">
+		<col style="background-color: blueviolet;">
+	</colgroup>
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td><img src="../image/prod.jpg" alt="컵" usemap="#map"></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>
+				<table>
+					<tr>
+						<td>1-1</td>
+					</tr>
+					<tr>
+						<td>1-2</td>
+					</tr>
+				</table>
+			
+			</td>
+		</tr>
+	</table>	
+</body>
+</html>
