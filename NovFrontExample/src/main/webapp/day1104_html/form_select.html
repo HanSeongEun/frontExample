@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>select/option</title>
+</head>
+<body>
+	<form>
+		학과:
+		<select name="class">
+			<optgroup label="공과대학"></optgroup>
+			<option value="computer" label="컴퓨터공학과"/>
+			<option value="elec">전자공학과</option>
+			<option value="mechanic">기계공학과</option>
+			</optgroup>
+			<optgroup label="문과대학"></optgroup>
+			<option value="history">사학과</option>
+			<option value="lang>">어문학과</option>
+			<option value="philo">철학과</option>
+			</optgroup>
+		</select><br>
+		고양이과 동물
+		<input name="cat" list="cats">
+		<datalist id="cats">
+			<option value="고양이"/>
+			<option value="호랑이"/>
+			<option value="사자"/>
+		</datalist><br>
+		메모
+		<textarea name="memo" cols="60" rows="10" placeholder="메모를 입력하세요"></textarea><br>
+		
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

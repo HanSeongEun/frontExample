@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>버튼 만들기</title>
+</head>
+<body>
+	<form>
+		<input type="search" name="search"><br>
+		<input typr="text" id="name1" name=	"name"><br>
+		<input type="number" name="n1" min="1" max="10" value="1"><br>
+		<input type="reset" value="초기화">
+		<button type="reset">초기화</button><br>
+		<input type="submit" value="전송">
+		<button type="submit">전송</button><br>
+		<!-- submit : form에 입력한 데이터를 서버로 전송 후 action에 저장한 페이지 요청 -->
+		<button>전송(submit)</button><!-- form태그 안에 있으면 submit -->
+		<input type="button" value="일반버튼" onclick="alert('js함수와 연결해 이벤트 처리')">
+		<button type="button" onclick="alert('버튼 클릭')">일반버튼</button><br>
+		<input type="image" src="../image/login.png">
+		<button type="submit">
+			<img src="../image/login.png">
+		</button>
+	</form>
+	<button onclick="alert('js함수와 연결해 이벤트 처리')">form 외부에 있는 버튼</button><!-- form 밖에 있으면 아무 일도 안하는 버튼 -->
+</body>
+</html>
