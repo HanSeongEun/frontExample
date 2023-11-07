@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>	
+	#container{
+		position: relative;/* 부모 태그가 relative일때만 absolute가능 */
+		width: 500px;
+		height: 100px;
+		background-color:  #CCC;
+	}
+	#one{
+		width: 200px;
+		height: 50px;
+		background-color:  coral;
+	}
+	#two{
+		position: absolute;
+		left: 50px;
+		top: 20px;
+		width: 200px;
+		height: 50px;
+		background-color: dodgerblue;
+	}	
+	#three{
+		width: 200px;
+		height: 50px;
+		background-color: darkmagenta;
+	}		
+</style>	
+</head>
+<body>
+	<p id="one">block #1</p>
+	<div id="container">
+		<div id="two">block #2</div>
+	</div>	
+	<p id="three">block #3</p>
+</body>
+</html>
