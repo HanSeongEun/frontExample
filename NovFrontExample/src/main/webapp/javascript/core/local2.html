@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>new document</title>
+<SCRIPT>
+	let scope = "global";
+	function checkscope() {
+		scope = "local";//앞에 새로 타입을 설정 안해줬기 때문에 전역변수
+		document.write(scope+"<br>");
+		myscope = "mylocal";// 전역변수
+		document.write(myscope+"<br>");
+	}
+	checkscope();
+	document.write(scope+"<br>");
+	document.write(myscope+"<br>");
+</SCRIPT>
+</head>
+
+<body>
+
+</body>
+</html>

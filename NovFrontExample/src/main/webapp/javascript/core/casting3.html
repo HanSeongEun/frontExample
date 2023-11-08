@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let b = false;
+		document.write(typeof b + "<br>");
+		if(b){
+			document.write("true");
+		}else{
+			document.write("false");
+		}
+		document.write("<br>");
+		
+		let s = "false";//5글자를 가지고 있는 문자열
+		document.write(typeof s + "<br>");
+		if(s){
+			document.write("true");
+		}else{
+			document.write("false");
+		}
+		document.write("<br>");
+		
+		let s2 = eval("false");
+		document.write(typeof s2 + "<br>");	
+		if(s2){
+			document.write("true");
+		}else{
+			document.write("false");
+		}
+		document.write("<br>");
+		
+		let num = '123+45';
+		document.write(num);
+		document.write("<br>");
+		document.write(eval(num));
+		
+		
+	</script>
+</body>
+</html>

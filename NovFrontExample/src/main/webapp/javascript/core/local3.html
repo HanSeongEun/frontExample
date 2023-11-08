@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>new document</title>
+<SCRIPT>
+	let scope = "global";
+	function f() {
+		//var scope; - 호이스팅
+		alert(scope);
+		var scope = "local";
+		alert(scope);
+	}
+	f();
+	
+	if (true) {
+		  let test = true; 
+		}
+
+		alert(test); // true(if 문이 끝났어도 변수에 여전히 접근할 수 있음)
+	
+	
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

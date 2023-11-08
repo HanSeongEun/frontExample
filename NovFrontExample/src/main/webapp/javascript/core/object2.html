@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function Student(name){
+			this.name = name;
+			this.study = function(){document.write(name + "공부 중!")};
+			this.play = () => {document.write(name + "노는 중!")};
+		}
+		
+		let kim = new Student("kim");
+		
+		console.log(kim);
+		kim.study();
+		documen.write("<br>");
+		kim.play();
+		documen.write("<br>");
+		
+		let park = new Student("park")
+		console.log()
+		park.study();
+	</script>
+</body>
+</html>
