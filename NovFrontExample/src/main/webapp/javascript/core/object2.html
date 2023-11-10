@@ -11,18 +11,25 @@
 			this.study = function(){document.write(name + "공부 중!")};
 			this.play = () => {document.write(name + "노는 중!")};
 		}
+		Student.prototype.sleep = function(){
+			document.write(this.name + "자는 중!")
+		}
 		
 		let kim = new Student("kim");
 		
 		console.log(kim);
 		kim.study();
-		documen.write("<br>");
+		document.write("<br>");
 		kim.play();
-		documen.write("<br>");
+		document.write("<br>");
+		kim.sleep();
+		document.write("<br>");
 		
 		let park = new Student("park")
 		console.log()
 		park.study();
+		document.write("<br>");
+		park.sleep();
 	</script>
 </body>
 </html>

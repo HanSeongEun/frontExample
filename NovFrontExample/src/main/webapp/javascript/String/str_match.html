@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let str = 'Like father, like son. like lila lias';
+		//match(/패턴(정규표현식)/옵션)
+		// like를 찾는다. i와 g는 옵션으로 insensitive,(대소문자 구별x) 
+		//globally(전체 다)를 의미한다. 
+		result = str.match(/li.{2}/i);
+		document.writeln(result + '<br>');
+	</script>
+</body>
+</html>

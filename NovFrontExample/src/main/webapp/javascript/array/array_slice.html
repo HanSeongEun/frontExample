@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+		let newArray = numbers.slice(5);
+		document.writeln(newArray + '<BR>'); 
+		document.writeln(numbers + '<BR>'); 
+			
+		let newArray2 = numbers.splice(1,5);
+		document.writeln(newArray2 + '<BR>'); 
+		document.writeln(numbers + '<BR>'); 
+			
+		numbers.splice(1, 0, 100);// (인덱스, 삭제할 요소 갯수, 새로 추가할 것)
+		document.writeln(numbers + '<BR>');
+		
+		numbers.splice(3, 3, 200, 300);
+		document.writeln(numbers + '<BR>');
+	
+	</script>
+</body>
+</html>
