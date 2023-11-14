@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>sample8</title>
+
+	<style type="text/css">
+		img {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<button id="fadeIn">표시</button>
+	<button id="fadeOut">비표시</button>
+	<p>
+		<img src="flower.jpg" alt="flower" />
+	</p>
+	<div>TESTTESTTEST</div>
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function () {
+			$("button#fadeIn").click(function () {
+				$("img:not(:animated)").fadeIn(5000);
+			});
+			$("button#fadeOut").click(function () {
+				$("img:not(:animated)").fadeOut(5000);
+			});
+		});
+	</script>
+</body>
+
+</html>

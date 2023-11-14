@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sample22</title>
+</head>
+<body>
+	<ul>
+		<li title="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li title="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li title="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li title="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+	</ul>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			$("[title^='f'][title*='th']").css("color","red");
+		});
+	</script>
+
+</body>
+</html>

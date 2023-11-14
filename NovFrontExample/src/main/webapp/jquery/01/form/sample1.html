@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>sample1</title>
+</head>
+<body>
+	<p>E-mail 주소：<input type="text" name="name" /></p>
+	<button>확인</button>
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("button").click(function(){
+				$("p").text($("input").val()+"로 메일을 전송합니다.");
+				$("button").text("전송");
+			});
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>sample8</title>
+</head>
+
+<body>
+	<ul>
+		<li><a href="flower.jpg">꽃</a></li>
+		<li><a href="sea.jpg">바다</a></li>
+		<li><a href="Jellyfish.jpg">해파리</a></li>
+		<li><a href="Building.jpg">건물</a></li>
+	</ul>
+	<p>
+		<img src="flower.jpg" alt="꽃" />
+	</p>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function () {
+			$("a").dblclick(
+				function () {
+					$("img").attr("src", $(this).attr("href"))
+							.attr("alt", $(this).text());
+				})
+				.click(function () {
+					return false;
+				});//앵커 태그의 경우에는 더블 클릭을 사용하려면 한번 클릭의 대해서는 막아야 한다.
+		});
+	</script>
+
+</body>
+
+</html>

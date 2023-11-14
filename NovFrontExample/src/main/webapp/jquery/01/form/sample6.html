@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>	
+<title>sample6</title>
+</head>
+<body>
+	신청자：
+	<select>
+		<option value=" 이름">개인</option>
+		<option value="회사명">법인</option>
+	</select>
+	<p>
+		<span>이름</span><input type="text" />
+	</p>
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function() {
+			$("select").change(function() {
+				$("span").text($(this).val());
+			});
+			//blur 발생 -> 기존 값과 현재값을 비교 다르면 이벤트 발생
+			$("input").change(function(){
+				alert($(this).val());
+			});
+		});
+	</script>
+
+
+</body>
+</html>

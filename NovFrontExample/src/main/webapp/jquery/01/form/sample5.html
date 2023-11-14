@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>sample5</title>
+</head>
+<body>
+	이름：<input type="text" value="" />
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("input").val("입력해 주세요").css("color","#CCC").one("focus",function(){
+				$(this).val("").css("color","#000");
+			}).blur(function(){
+				if($(this).val()==""){
+					$(this).val("입력해 주세요").css("color","#CCC").one("focus",function(){
+						$(this).val("").css("color","#000");
+					});//one-focus
+				}//if
+			});//blur
+		});//ready
+		</script>
+
+</body>
+</html>
