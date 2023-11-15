@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>sample3 </title>
+
+</head>
+
+<body>
+	<dl></dl>
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function () {
+			$.ajax({
+				url: 'sample3.xml',
+				dataType: 'xml',// text ->  xml 
+				success: function (data) {
+					$("item", data).each(function (){
+						$("dl").append("<dt><a href='" + $("link", this).text() + "'>" + $("title", this).text() + "</a></dt><dd>" + $("description", this).text() + "</dd>");
+						});
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
