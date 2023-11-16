@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>list 출력</title>
+</head>
+<body>
+	<div id="result"></div>
+	<div id="result2"></div>
+	<div id="result3"></div>
+	<button>click</button>
+	<script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script>
+		//button 클릭시
+		//ajax로 daa.jsp요청 받아온 데이터를 #result에 출력
+		$(function(){
+			$("button").click(function(){
+				$.ajax({
+					url:"data.jsp",					
+					method:"get",
+					dataType:"JSON"
+				}).done(function(data){
+					//$.each(data, function(i, name){
+					//$("#result").append(name + "<br>");
+					$(data).each(function(i, name){
+						$("#result").append(name + ",");
+					})
+					for(i =0 ; i <data.length; i++){
+						$("#result2").append(data[i] + ":");
+					}
+					for(i in data){
+						$("#result3").append(data[i] + "+");
+					}
+				}).fail(function(xhr, textStatus, errorThrown){
+					$("div").html("<div>" + textStatus + " (HTTP-" + xhr.status + " / " + errorThrown + ")</div>");
+				});
+			
+			});
+		});
+ 	</script>
+</body>
+</html>
