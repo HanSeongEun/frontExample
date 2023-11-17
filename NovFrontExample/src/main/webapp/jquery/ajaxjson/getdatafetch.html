@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id ="btn" onclick="fetchData()"> click </button>
+	<div id = "result"></div>
+	
+	<script>
+		function fetchData(){
+			 fetch("data.jsp")
+			 .then(rep => rep.json())
+			 .then(data => document.querySelector("#result").append(data))
+		}
+		
+	</script>
+
+</body>
+</html>
